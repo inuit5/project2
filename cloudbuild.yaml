@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/Docker86/hello', '.']
+  args: ['build', '-t', 'gcr.io/Docker86/demo-app', '.']
 images:
-- 'gcr.io/Docker86/hello' 
+- 'gcr.io/Docker86/demo-app' 
 
