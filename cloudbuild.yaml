@@ -33,4 +33,4 @@ steps:
 
 images:
   #- 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest'
-  gcr.io/docker86/demo-app:latest
+   - 'gcr.io/docker86/demo-app:latest'
