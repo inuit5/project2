@@ -32,4 +32,5 @@ steps:
         kubectl set image deployment/demo-app demo-app=LOCATION-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest
 
 images:
-  - 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest'
+  #- 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest'
+  gcr.io/docker86/demo-app:latest
