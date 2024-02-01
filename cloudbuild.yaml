@@ -4,15 +4,24 @@
 #images:
 #- 'gcr.io/docker86/demo-app' 
 
+#steps:
+  # Build the Docker image
+  #- name: 'gcr.io/cloud-builders/docker'
+  #  args: ['build', '-t', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest', '.']
+
+  # Push the image to Artifact Registry
+ # - name: 'gcr.io/cloud-builders/docker'
+ #   args: ['push', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest']
+
 steps:
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest', '.']
+    args: ['build', '-t', 'gcr.io/docker86/demo-app:latest', '.']
 
-  # Push the image to Artifact Registry
+  # Push the image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest']
-
+    args: ['push', 'gcr.io/docker86/demo-app:latest']
+    
   # Set up kubectl
   - name: 'gcr.io/cloud-builders/kubectl'
     entrypoint: 'bash'
