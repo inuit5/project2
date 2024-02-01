@@ -28,7 +28,7 @@ steps:
     args:
       - '-c'
       - |
-        gcloud container clusters get-credentials autopilot-cluster-1 --project docker86
+        gcloud container clusters get-credentials autopilot-cluster-1 --zone europe-west1 --project docker86
         kubectl set image deployment/demo-app demo-app=LOCATION-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest
 
 images:
