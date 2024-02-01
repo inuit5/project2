@@ -29,7 +29,7 @@ steps:
       - '-c'
       - |
         gcloud container clusters get-credentials autopilot-cluster-1 --region europe-west1 --project docker86
-        kubectl set image deployment/demo-app demo-app=LOCATION-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest
+        kubectl set image deployment/demo-app demo-app=gcr.io/docker86/demo-app:latest
 
 images:
   #- 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest'
