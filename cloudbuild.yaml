@@ -18,7 +18,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/docker86/demo-app:latest', '.']
 
-  # Push the image to Container Registry
+  # Push the image to Container Registry 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/docker86/demo-app:latest']
     
