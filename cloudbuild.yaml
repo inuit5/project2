@@ -9,7 +9,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest', '.']
 
-   Push the image to Artifact Registry
+   #Push the image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west1-docker.pkg.dev/docker86/demo-app/69a4c5626f4d:latest']
 
