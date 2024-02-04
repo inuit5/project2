@@ -1,2 +1,2 @@
-#bz
+#bzz
 print("Hello from Python!")
